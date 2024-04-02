@@ -106,10 +106,10 @@
                                         <p>Age : <span>21</span></p>
                                     </div>
                                     <div class="info-item padd-15">
-                                        <p>Website : <span>www.domain.com</span></p>
+                                        <p>Website : <span>https://lungocduc.netlify.app/</span></p>
                                     </div>
                                     <div class="info-item padd-15">
-                                        <p>Email : <span>lungocduc.horse@gmail.com</span></p>
+                                        <p>Email : <span>duclu1304@gmail.com</span></p>
                                     </div>
                                     <div class="info-item padd-15">
                                         <p>Degree : <span>Computer Science</span></p>
@@ -126,7 +126,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="buttons">
-                                        <a href="#" class="btn">Download CV</a>
+                                        <a href="img/MyCV.pdf" download class="btn">Download CV</a>
                                     </div>
                                 </div>
                             </div>
@@ -522,7 +522,7 @@
                                 <h3 class="contact-subtitle">Write us by mail</h3>
                                 <span class="contact-description">
                                     <i class="fa fa-envelope" aria-hidden="true"></i>
-                                    lungocduc.horse@gmail.com
+                                    duclu1304@gmail.com
                                 </span>
                             </div>
                         </div>
@@ -532,24 +532,24 @@
                         <div class="contact-inputs">
                             <!--Contact content -->
                             <div class="contact-content">
-                                <input type="email" class="contact-input">
+                                <input type="email" id="email" class="contact-input">
                                 <label for="" class="contact-label">Email</label>
                                 <span></span>
                             </div>
                             <!--Contact content -->
                             <div class="contact-content">
-                                <input type="text" class="contact-input">
+                                <input type="text" id="subject" class="contact-input">
                                 <label for="" class="contact-label">Subject</label>
                                 <span></span>
                             </div>
                             <!--Contact content -->
                             <div class="contact-content contact-area">
-                                <textarea name="" id="" cols="30" rows="10" class="contact-input"></textarea>
+                                <textarea name="" id="message" cols="30" rows="10" class="contact-input"></textarea>
                                 <label for="" class="contact-label">Message</label>
                                 <span></span>
                             </div>
                         </div>
-                        <a href="#" class="btn send-message">Send Message</a>
+                        <a href="#" onclick="sendMail()" class="btn send-message">Send Message</a>
                     </form>
                     <!--Contact content End-->
                 </div>
@@ -618,6 +618,18 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/main.js"></script>
     <script src="js/style-switcher.js"></script>
+
+    <!--EmailJS-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "1v3BmpWpqBGEKz-uT",
+            });
+        })();
+    </script>
+    <script src="js/email.js"></script>
 </body>
 
 </html>
