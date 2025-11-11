@@ -650,6 +650,8 @@ h3.my-profession {
 
 /* services*/
 .service .container {
+    display: flex;
+    display: flex;
     padding-bottom: 40px;
 }
 
@@ -657,6 +659,14 @@ h3.my-profession {
     margin-bottom: 30px;
     flex: 0 0 33.33%;
     max-width: 33.33%;
+}
+.service-item {
+    display: flex;
+    flex-basis: calc(33.33% - 30px);
+}
+
+.service-item-inner {
+    min-height: 250px;
 }
 
 .service .service-item .service-item-inner {
@@ -757,6 +767,7 @@ h3.my-profession {
 
 .portfolio .portfolio-container .portfolio-box img {
     width: 100%;
+    height: 250px;
 }
 
 .portfolio .portfolio-container .portfolio-box img:hover {
